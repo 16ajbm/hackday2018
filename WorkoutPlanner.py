@@ -44,18 +44,18 @@ def checkIfUsed(groupCIU,indexCIU,countCIU):
 		indexCIU = checkIfUsed(groupCIU,indexCIU,countCIU+1)
 
 def randomExercise():
-    index = random.randint(0,len(back)-1)
-    print(f'precheck:{back[index]}')
-    index = checkIfUsed(back,index,0)
+	index = random.randint(0,len(back)-1)
+	print(f'precheck:{back[index]}')
+	index = checkIfUsed(back,index,0)
 	print(f'postcheck:{back[index]}')
 	exercise = back[index]
-    back[2] = -1
-    if exercise[1] != None:
-        index = random.randint(0,len(exercise[1])-1)
-        exercise = exercise[1][index]
-        print(f'variation:{back[index]}')
+	back[index][2] = -1
+	if exercise[1] != None:
+		index = random.randint(0,len(exercise[1])-1)
+		exercise = exercise[1][index]
+		print(f'variation:{exercise}')
 
-for i in range(5):
+for i in range(10):
 	randomExercise()
 
 #print(f'exercise: {back[index]}')
