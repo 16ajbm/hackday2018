@@ -47,8 +47,8 @@ def randomExercise():
     index = random.randint(0,len(back)-1)
     print(f'precheck:{back[index]}')
     index = checkIfUsed(back,index,0)
-	print(f'postcheck:{back[index]}')
-	exercise = back[index]
+    print(f'postcheck:{back[index]}')
+    exercise = back[index]
     back[2] = -1
     if exercise[1] != None:
         index = random.randint(0,len(exercise[1])-1)
