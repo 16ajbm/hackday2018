@@ -8,6 +8,6 @@ Add an exercise to the database:
   - appends the exercise to the list of exercises by muscle group
 
 Random exercise generator:
-    - returns 1 if exercise is found, 0 if not
-    - prints exercise
+    - returns random exercise
+    - returns 0 if no unique exercise is found
     - does not give any repeats of exercises
